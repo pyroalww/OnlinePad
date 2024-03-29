@@ -74,7 +74,7 @@ Contributions to OnlinePad are welcomed and appreciated! To contribute:
 
 ## Support
 
-For questions, suggestions, or assistance, please contact us at [contactNotepad@pyroalw.com(mailto:lolpyro@proton.me). We're here to help you make the most of OnlinePad!
+For questions, suggestions, or assistance, please contact us at [contactNotepad@pyroalw.com](mailto:lolpyro@proton.me). We're here to help you make the most of OnlinePad!
 
 ## About Us
 
