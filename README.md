@@ -36,12 +36,15 @@ Tailor OnlinePad to your preferences with customizable settings options. Adjust 
 
 ## Screenshots
 
-Notes Page:
+# Notes Page:
 ![image](https://github.com/pyroalww/OnlinePad/assets/134533935/46a745bf-87b0-4655-a282-b833a4287e2f)
-Settings:
+
+# Settings:
 ![image](https://github.com/pyroalww/OnlinePad/assets/134533935/94c749af-095f-4549-8749-8f0ffd4617bd)
-Saved Notes:
+
+# Saved Notes:
 ![image](https://github.com/pyroalww/OnlinePad/assets/134533935/c1272c31-ff3a-4301-8f70-0cfa4b965e95)
+
 
 
 ## License
