@@ -1,0 +1,118 @@
+/* Stil dosyası */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.toolbar button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.toolbar select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#editor {
+    padding: 20px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+#notesModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.note {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.note button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.night-mode .toolbar {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+}
+
+.night-mode #editor {
+    background-color: #444;
+    color: #fff;
+}
+
+.night-mode .modal-content {
+    background-color: #333;
+    color: #fff;
+}
+
+.reminder {
+    background-color: #ffd700;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlinePad - Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Cloudflare Icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cloudflare-icons/0.20.1/cf-icons.min.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="boldBtn"><i class="fas fa-bold"></i></button>
+        <button id="italicBtn"><i class="fas fa-italic"></i></button>
+        <button id="underlineBtn"><i class="fas fa-underline"></i></button>
+        <select id="fontFamilySelect">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+        </select>
+        <select id="fontSizeSelect">
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="16px">16</option>
+            <option value="18px">18</option>
+            <option value="20px">20</option>
+            <option value="22px">22</option>
+        </select>
+        <button id="nightModeBtn"><i class="fas fa-moon"></i></button>
+        <button id="unorderedListBtn"><i class="fas fa-list-ul"></i></button>
+        <button id="orderedListBtn"><i class="fas fa-list-ol"></i></button>
+        <button id="tableBtn"><i class="fas fa-table"></i></button>
+        <button id="imageBtn"><i class="fas fa-image"></i></button>
+        <button id="fileBtn"><i class="fas fa-file"></i></button>
+        <input type="text" id="tagInput" placeholder="Add Tag">
+        <button id="tagBtn">Tag</button>
+        <button id="saveBtn"><i class="fas fa-save"></i> Save</button>
+        <button id="newNoteBtn"><i class="fas fa-file"></i> New Note</button>
+        <input type="text" id="searchInput" placeholder="Search Notes">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+        <button id="exportBtn"><i class="fas fa-file-export"></i></button>
+        <button id="reminderBtn"><i class="fas fa-bell"></i></button>
+        <button id="showAllNotesBtn"><i class="fas fa-bars"></i> Show Notes</button>
+        <button id="settingsBtn"><i class="fas fa-cog"></i> Settings</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <div id="notesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAllNotesBtn">&times;</span>
+            <h2>All Notes</h2>
+            <div id="notesContainer"></div>
+            <input type="hidden" id="selectedNoteIndex">
+            <button id="moveToRecycleBinBtn">Move to Recycle Bin</button>
+        </div>
+    </div>
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSettingsBtn">&times;</span>
+            <h2>Settings</h2>
+            <div>
+                <label for="autoSaveInterval">Auto Save Interval (ms):</label>
+                <input type="number" id="autoSaveInterval" min="1000" value="10000">
+            </div>
+            <div>
+                <label for="visibleToolbarButtons">Buttons Visible in Toolbar:</label>
+                <input type="text" id="visibleToolbarButtons" placeholder="Example: bold,italic,underline">
+            </div>
+            <div>
+                <label for="themeColor">Theme Color:</label>
+                <select id="themeColor">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="amoled-dark">AMOLED Dark</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+            <button id="saveSettingsBtn">Save</button>
+            <button id="clearLocalStorageBtn">Clear Local Storage</button>
+        </div>
+    </div>
+    <input type="file" id="fileInput" style="display: none;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
